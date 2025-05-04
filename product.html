@@ -49,10 +49,7 @@
         @media (max-width: 480px) {
             .products {
                 grid-template-columns: 1fr 1fr;
-                
-                
             }
-
             .card {
                 width: 10rem;
                 margin: 10px;
@@ -60,15 +57,19 @@
             }
         }
 
-       @media (min-width: 481px) and (max-width: 768px) {
-            .products {
-                grid-template-columns: 1fr;
+       @media screen and(max-width : 600px)
+        {
+            .products{
+                display : grid;
+                grid-template-columns : 20% 20% 20%;
+                place-item : center;
+                text-align : center;
+                justify-content : center;
+                align-items : center;
+                margin-top : 20px;
             }
-        }
-
-        @media (min-width: 769px) and (max-width: 1024px) {
-            .products {
-                grid-template-columns: repeat(4, 1fr);
+            .card{
+                width : 75%;
             }
         }
  
